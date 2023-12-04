@@ -1,0 +1,22 @@
+{% extends 'parent.html' %}
+{% load static %}
+
+{% block title %}
+<title>Child</title>
+{% endblock %}
+    
+
+{% block body_block %}
+<center>
+        <h1 class="btn btn-dark">ZIVA DHONI</h1>
+        <h6 id="nav">@ziva_singh_dhoni</h6>
+    <div>
+        <img src="{% static 'images/dhoni_daughter.jpeg' %}" width="450px" alt="Image Not Found">
+    </div>
+</center>
+<center>
+    <h5>
+        <a href="{% url 'parent' %}">MS Dhoni</a>
+    </h5>
+</center>
+{% endblock %}
